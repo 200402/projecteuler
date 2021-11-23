@@ -17,8 +17,16 @@ namespace projecteuler
             switch (taskNumber)
             {
                 case "1":
-                    var Task_1 = new task_1();
-                    Console.WriteLine(Task_1.answer());
+                    var Task1 = new task_1();
+                    Console.WriteLine(Task1.answer());
+                    break;
+                case "2":
+                    var Task2 = new task_2();
+                    Console.WriteLine(Task2.answer());
+                    break;
+                case "3":
+                    var Task3 = new task_3();
+                    Console.WriteLine(Task3.answer());
                     break;
             }
         }
