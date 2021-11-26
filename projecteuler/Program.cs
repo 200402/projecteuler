@@ -36,6 +36,10 @@ namespace projecteuler
                     var Task5 = new task_5();
                     Console.WriteLine(Task5.answer());
                     break;
+                case "6":
+                    var Task6 = new task_6();
+                    Console.WriteLine(Task6.answer());
+                    break;
             }
         }
 
