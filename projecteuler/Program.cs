@@ -4,8 +4,21 @@ namespace projecteuler
 {
     class Program
     {
+        static ITask[] TasksList = new ITask[]
+        {
+             new task_1(),
+             new task_2(),
+             new task_3(),
+             new task_4(),
+             new task_5(),
+             new task_6(),
+             new task_7(),
+             new task_8()
+        };
+
         static void Main(string[] args)
         {
+
             while (true)
             {
                 start(Console.ReadLine());
@@ -14,43 +27,8 @@ namespace projecteuler
 
         static void start(string taskNumber)
         {
-            ITask task;
-            switch (taskNumber)
-            {
-                case "1":
-                    task = new task_1();
-                    Console.WriteLine(task.answer());
-                    break;
-                case "2":
-                    task = new task_2();
-                    Console.WriteLine(task.answer());
-                    break;
-                case "3":
-                    task = new task_3();
-                    Console.WriteLine(task.answer());
-                    break;
-                case "4":
-                    task = new task_4();
-                    Console.WriteLine(task.answer());
-                    break;
-                case "5":
-                    task = new task_5();
-                    Console.WriteLine(task.answer());
-                    break;
-                case "6":
-                    task = new task_6();
-                    Console.WriteLine(task.answer());
-                    break;
-                case "7":
-                    task = new task_7();
-                    Console.WriteLine(task.answer());
-                    break;
-                //case "8":
-                //    task = new task_8();
-                //    Console.WriteLine(task.answer());
-                //    break;
-            }
+            ITask task = TasksList[Convert.ToInt32(taskNumber)];
+            Console.WriteLine(task.answer());
         }
-
     }
 }
