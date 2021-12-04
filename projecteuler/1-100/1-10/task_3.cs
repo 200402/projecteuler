@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace projecteuler
 {
-    class task_3
+    class task_3 : ITask
     {
-        public List<long> answer()
+        public string answer()
         {
             List<long> primeNumbers = new List<long>();
             List<long> divisorsOfNumber = new List<long>();
@@ -36,7 +36,7 @@ namespace projecteuler
                 }
             }
 
-            return divisorsOfNumber;
+            return divisorsOfNumber[divisorsOfNumber.Count-1].ToString();
         }
     }
 }

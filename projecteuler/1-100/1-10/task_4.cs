@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace projecteuler
 {
-    class task_4
+    class task_4 : ITask
     {
-        public int answer()
+        public string answer()
         {
             string product = "";
             int productInt = 0;
@@ -33,7 +33,7 @@ namespace projecteuler
                         productInt = Convert.ToInt32(product);
                 }
             }
-            return productInt;
+            return productInt.ToString();
         }
     }
 }

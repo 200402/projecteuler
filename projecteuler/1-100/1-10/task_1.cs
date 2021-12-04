@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace projecteuler
 {
-    public class task_1
+    public class task_1 : ITask
     {
         int[] arrayOfMultiplicity = new int[] { 3, 5 };
         int start = 0;
         int end = 100000;
 
-        public long answer()
+        public string answer()
         {
             long sum = 0;
             bool fit;
@@ -29,7 +29,7 @@ namespace projecteuler
                     sum += i;
             }
 
-            return sum;
+            return sum.ToString();
         }
     }
 }

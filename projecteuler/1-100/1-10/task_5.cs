@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace projecteuler
 {
-    class task_5
+    class task_5:ITask
     {
-        public ulong answer()
+        public string answer()
         {
             bool shit;
             for (ulong i = 1; ; i++)
@@ -24,7 +24,7 @@ namespace projecteuler
                 }
                 if (shit)
                 {
-                    return i;
+                    return i.ToString();
                 }
             }
         }

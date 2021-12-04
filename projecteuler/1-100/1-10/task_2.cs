@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projecteuler
 {
-    class task_2
+    class task_2 : ITask
     {
         int[] arrayOfMultiplicity = new int[] { 3, 5 };
         int firstNumber = 1;
@@ -14,7 +14,7 @@ namespace projecteuler
         int newNumber;
         int end = 4_000_000;
 
-        public long answer()
+        public string answer()
         {
             int i = 0;
             long sum = 0;
@@ -28,7 +28,7 @@ namespace projecteuler
                     sum += newNumber;
             }
 
-            return sum;
+            return sum.ToString();
         }
     }
 }

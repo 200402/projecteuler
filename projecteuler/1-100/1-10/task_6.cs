@@ -7,12 +7,12 @@ using static System.Math;
 
 namespace projecteuler
 {
-    class task_6
+    class task_6 : ITask
     {
-        public long answer()
+        public string answer()
         {
-            int sumOfSquares = 0;
-            int squareOfSums = 0;
+            long sumOfSquares = 0;
+            long squareOfSums = 0;
 
             for (int i = 1; i < 100; i++)
             {
@@ -20,7 +20,7 @@ namespace projecteuler
                 squareOfSums += i;
             }
             squareOfSums *= squareOfSums;
-            return (long)Abs(sumOfSquares - squareOfSums);
+            return Abs(sumOfSquares - squareOfSums).ToString();
         }
     }
 }

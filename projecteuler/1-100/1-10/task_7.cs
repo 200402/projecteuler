@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace projecteuler
 {
-    class task_7
+    class task_7 : ITask
     {
-        public int answer()
+        public string answer()
         {
             int count = 10001;
             List<int> primeNumbers = new List<int>();
@@ -32,7 +32,7 @@ namespace projecteuler
                     primeNumbers.Add(i);
                 }
             }
-            return primeNumbers[count-1];
+            return primeNumbers[count - 1].ToString();
         }
     }
 }
