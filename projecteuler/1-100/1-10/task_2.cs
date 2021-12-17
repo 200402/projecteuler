@@ -8,15 +8,14 @@ namespace projecteuler
 {
     class task_2 : ITask
     {
-        int[] arrayOfMultiplicity = new int[] { 3, 5 };
-        int firstNumber = 1;
-        int secondNumber = 2;
-        int newNumber;
-        int end = 4_000_000;
-
         public string answer()
         {
+            int firstNumber = 1;
+            int secondNumber = 2;
+            int newNumber;
+            int end = 4_000_000;
             int i = 0;
+
             long sum = 0;
             while (firstNumber + secondNumber < end)
             {
@@ -24,9 +23,18 @@ namespace projecteuler
                 newNumber = firstNumber + secondNumber;
                 firstNumber = secondNumber;
                 secondNumber = newNumber;
-                if (i % 2 == 0)
+                if (newNumber % 2 == 0)
                     sum += newNumber;
             }
+            //while (firstNumber + secondNumber < end)
+            //{
+            //    i++;
+            //    newNumber = firstNumber + secondNumber;
+            //    firstNumber = secondNumber;
+            //    secondNumber = newNumber;
+            //    if (i % 2 == 0)
+            //        sum += newNumber;
+            //}
 
             return sum.ToString();
         }

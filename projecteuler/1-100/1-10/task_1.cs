@@ -8,12 +8,12 @@ namespace projecteuler
 {
     public class task_1 : ITask
     {
-        int[] arrayOfMultiplicity = new int[] { 3, 5 };
-        int start = 0;
-        int end = 100000;
-
         public string answer()
         {
+            int[] arrayOfMultiplicity = new int[] { 3, 5 };
+            int start = 0;
+            int end = 1000;
+
             long sum = 0;
             bool fit;
 

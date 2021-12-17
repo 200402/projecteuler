@@ -18,7 +18,6 @@ namespace projecteuler
 
         static void Main(string[] args)
         {
-
             while (true)
             {
                 start(Console.ReadLine());
@@ -27,7 +26,7 @@ namespace projecteuler
 
         static void start(string taskNumber)
         {
-            ITask task = TasksList[Convert.ToInt32(taskNumber)];
+            ITask task = TasksList[Convert.ToInt32(taskNumber) - 1];
             Console.WriteLine(task.answer());
         }
     }
