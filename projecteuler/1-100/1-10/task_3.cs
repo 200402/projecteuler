@@ -16,27 +16,30 @@ namespace projecteuler
             bool correspondence;
 
             primeNumbers.Add(2);
-            for (int i = 3; i < number/2; i++)
+            for (long i = 3; i < Math.Sqrt(number); i++)
             {
                 correspondence = true;
-                foreach (long prime in primeNumbers)
+
+
+                Parallel.ForEach(primeNumbers, (prime, state) =>
                 {
-                    if (i%prime == 0)
+                    if (i % prime == 0)
                     {
                         correspondence = false;
-                        break;
+                        state.Break();
                     }
-                }
+                });
 
                 if (correspondence)
                 {
                     primeNumbers.Add(i);
                     if (number % i == 0)
+                    {
                         divisorsOfNumber.Add(i);
-                }
+                    }
+                } 
             }
-
-            return divisorsOfNumber[divisorsOfNumber.Count-1].ToString();
-        }
+            return divisorsOfNumber[divisorsOfNumber.Count - 1].ToString();
+        } 
     }
 }

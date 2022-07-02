@@ -18,11 +18,11 @@ namespace projecteuler_Tests
             Assert.That(tasksList.t_List[1].answer(), Is.EqualTo("4613732"));
         }
 
-        //[Test]
-        //public void task_3_test()
-        //{
-        //    Assert.That(tasksList.t_List[2].answer(), Is.EqualTo("6857"));
-        //}
+        [Test]
+        public void task_3_test()
+        {
+            Assert.That(tasksList.t_List[2].answer(), Is.EqualTo("6857"));
+        }
 
         [Test]
         public void task_4_test()
