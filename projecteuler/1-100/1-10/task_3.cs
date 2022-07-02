@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projecteuler
 {
-    class task_3 : ITask
+    public class task_3 : ITask
     {
         public string answer()
         {

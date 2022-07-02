@@ -7,7 +7,7 @@ using static System.Math;
 
 namespace projecteuler
 {
-    class task_6 : ITask
+    public class task_6 : ITask
     {
         public string answer()
         {
