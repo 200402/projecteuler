@@ -10,8 +10,8 @@ namespace projecteuler
     {
         public string answer()
         {
-            int firstNumber = 1;
-            int secondNumber = 2;
+            int firstNumber = 0;
+            int secondNumber = 1;
             int newNumber;
             int end = 4_000_000;
             int i = 0;
