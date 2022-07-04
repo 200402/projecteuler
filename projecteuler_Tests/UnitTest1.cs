@@ -53,5 +53,14 @@ namespace projecteuler_Tests
         {
             Assert.That(tasksList.t_List[7].answer(), Is.EqualTo("23514624000"));
         }
+
+        [Test]
+        public void task_9_test()
+        {
+            if (tasksList.t_List.Length > 8)
+                Assert.That(tasksList.t_List[8].answer(), Is.EqualTo("23514624000"));
+            else
+                Assert.Ignore();
+        }
     }
 }

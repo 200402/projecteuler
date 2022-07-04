@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace projecteuler
+namespace projecteuler._1_100._1_10
 {
     public class task_2 : ITask
     {
