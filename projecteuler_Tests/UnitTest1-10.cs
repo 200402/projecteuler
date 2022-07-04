@@ -58,7 +58,7 @@ namespace projecteuler_Tests
         public void task_9_test()
         {
             if (tasksList.t_List.Length > 8)
-                Assert.That(tasksList.t_List[8].answer(), Is.EqualTo("23514624000"));
+                Assert.That(tasksList.t_List[8].answer(), Is.EqualTo("31875000"));
             else
                 Assert.Ignore();
         }

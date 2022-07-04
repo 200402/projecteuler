@@ -10,7 +10,7 @@ namespace projecteuler._1_100._1_10
     {
         public string answer()
         {
-            int sum = 200000;
+            int sum = 1000;
             for (int a = 1; a < sum; a++)
             {
                 for (int b = 1; b < sum; b++)
