@@ -19,7 +19,8 @@ namespace projecteuler
              new task_6(),
              new task_7(),
              new task_8(),
-             new task_9()
+             new task_9(),
+             new task_10()
         };
     }
 }
