@@ -1,4 +1,5 @@
 ﻿using projecteuler._1_100._1_10;
+using projecteuler._1_100._11_20;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,8 @@ namespace projecteuler
              new task_7(),
              new task_8(),
              new task_9(),
-             new task_10()
+             new task_10(),
+             new task_11()
         };
     }
 }
