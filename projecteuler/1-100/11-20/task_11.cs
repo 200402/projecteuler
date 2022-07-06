@@ -75,8 +75,6 @@ namespace projecteuler._1_100._11_20
                     max = Math.Max(max, diagonalB);
                 }
             }
-
-
             return max;
         }
     }
