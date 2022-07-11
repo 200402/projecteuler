@@ -26,6 +26,7 @@ namespace projecteuler
              new task_12(),
              new task_13(),
              new task_14(),
+             new task_15(),
         };
     }
 }
