@@ -11,30 +11,32 @@ namespace projecteuler._1_100._1_10
     {
         public string answer()
         {
-            long sum = 2;
-            List<long> primeNumbers = new List<long>();
-            bool correspondence;
-            primeNumbers.Add(2);
+            long sum = 0;
 
-            for (long i = 3; i < 2_000_000; i++)
+            for (long i = 1; i < 2_000_000; i++)
             {
-                correspondence = true;
-                foreach (long prime in primeNumbers)
+                if (IsPrime(i))
                 {
-                    if (i % prime == 0)
-                    {
-                        correspondence = false;
-                        break;
-                    }
-                }
-                if (correspondence)
-                {
-                    primeNumbers.Add(i);
                     sum += i;
                 }
             }
 
             return sum.ToString();
+        }
+
+        public static bool IsPrime(long number)
+        {
+            if (number <= 1) return false;
+            if (number == 2) return true;
+            if (number % 2 == 0) return false;
+
+            var boundary = (int)Math.Floor(Math.Sqrt(number));
+
+            for (int i = 3; i <= boundary; i += 2)
+                if (number % i == 0)
+                    return false;
+
+            return true;
         }
     }
 }
