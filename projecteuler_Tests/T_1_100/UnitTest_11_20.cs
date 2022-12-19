@@ -62,6 +62,7 @@ namespace projecteuler_Tests.T_1_100
         [Test]
         public void task_17_test()
         {
+            Assert.Ignore();
             if (tasksList.t_List.Length > 16)
                 Assert.That(tasksList.t_List[16].answer(), Is.EqualTo("21124"));
             else
@@ -71,6 +72,7 @@ namespace projecteuler_Tests.T_1_100
         [Test]
         public void task_18_test()
         {
+            Assert.Ignore();
             if (tasksList.t_List.Length > 17)
                 Assert.That(tasksList.t_List[17].answer(), Is.EqualTo("1074"));
             else
